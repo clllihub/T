@@ -1,10 +1,10 @@
 <p align="center">
-极简风格Hexo主题T
+hexo极简风格Hexo主题T
 </p>
 
 ![](https://ossoososssn.oss-cn-beijing.aliyuncs.com/T/1.jpg)
 
-## [在线预览👉](https://ossssn.com/about/)
+## [在线预览👉](https://ossssn.com)
 
 
 
