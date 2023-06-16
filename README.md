@@ -9,13 +9,9 @@
 
 
 ### 安装
-方便备份和更新
-
-fork 本项目
-git clone https://github.com/<你的用户名>/hexo-theme-white.git themes/white
-修改根目录下的_config.yml 为theme: white
-主题配置
-其实config文件里写的很明白了，现在就重新列一下，添加一些不必要的说明
+```
+git clone https://github.com/ossoososssn/T.git themes/T
+```
 
 ### 可自定义风格
 
