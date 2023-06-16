@@ -4,13 +4,19 @@
 
 ![](https://ossoososssn.oss-cn-beijing.aliyuncs.com/T/1.jpg)
 
-## [点此查看👉主题配置文档](https://fushaolei.github.io/hexo-theme-white/doc-white-configration/)
+## [在线预览👉](https://ossssn.com/about/)
 
 
 
 ### 安装
 ```
 git clone https://github.com/ossoososssn/T.git themes/T
+```
+修改hexo根目录下_config.yml里面的theme为T
+```
+theme: T
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
 ```
 
 ### 可自定义风格
@@ -188,5 +194,6 @@ archive_tab_name: Blog
 #图片懒加载
 lazyload:
   open: true #是否开启
-这里就不bb了 大家应该看的懂
 ```
+
+# 注,本主题基于White主题改制而成
