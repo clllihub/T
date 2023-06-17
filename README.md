@@ -53,13 +53,11 @@ archive:
 type为home就是一个封面，为img就是图片加标题的形式，simple就是极简模式
 ```
 
-### 文章封面设置
+### 文章封面设置 
 ```
-title: 测试  #标题
-date: 2023-05-06 17:11:48 #时间
+需要在单片文章头部设置
 custom_disable_cover: true #控制文章顶图是否显示 true 为不显示 
 cover: https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/15.JPEG #文章封面
-
 ```
 
 ### 随机cover
