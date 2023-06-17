@@ -19,6 +19,8 @@ theme: T
 ## Docs: https://hexo.io/docs/one-command-deployment
 ```
 
+
+
 ### 可自定义风格
 
 ```
@@ -50,6 +52,16 @@ archive:
   type: "simple" # archive的类型，可选 img | simple
 type为home就是一个封面，为img就是图片加标题的形式，simple就是极简模式
 ```
+
+### 文章封面设置
+```
+title: 测试  #标题
+date: 2023-05-06 17:11:48 #时间
+custom_disable_cover: true #控制文章顶图是否显示 true 为不显示 
+cover: https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/15.JPEG #文章封面
+
+```
+
 ### 随机cover
 当你懒的找封面而又想用img模式的时候，我为你准备了些随机封面
 ```
