@@ -55,7 +55,7 @@ type为home就是一个封面，为img就是图片加标题的形式，simple就
 
 ### 文章封面设置 
 ```
-需要在单片文章头部设置
+需要在单篇文章头部设置
 custom_disable_cover: true #控制文章顶图是否显示 true 为不显示 
 cover: https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/15.JPEG #文章封面
 ```
