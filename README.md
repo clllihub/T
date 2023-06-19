@@ -2,7 +2,7 @@
 hexo极简风格Hexo主题T
 </p>
 
-![](https://ossoososssn.oss-cn-beijing.aliyuncs.com/T/D.jpg)
+![](https://ossoososssn.oss-cn-beijing.aliyuncs.com/T/U.jpg)
 
 ## [在线预览👉](https://ossssn.com)
 
