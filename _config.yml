@@ -43,7 +43,7 @@ site_description: hi. #The default meta description for all the meta description
 menu:
   主页: /
   相册: /archives
-  测试: /demo
+  软件: /Software
   关于: /about
 
 
@@ -57,7 +57,7 @@ search:
 # 自我介绍
 intro:
   title: Hi.I'm Chi. 
-  sub: '摄影爱好者[photos](https://ossssn.com/archives/)' # markdown语法
+  sub: 'This is my [Memory](https://ossssn.com/archives/)' # markdown语法
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
   author: Chi #所有文章的默认作者
 
@@ -92,11 +92,11 @@ plugins:
 # 评论系统设置
 comments:
   open: false #是否开启评论系统
-  system: gitalk #选择评论系统 可选 valine gitalk livere
+  system: valine #选择评论系统 可选 valine gitalk livere
   # Valine
   valine:
-    appid: #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
-    appkey: #Leancloud应用的AppKey
+    appid:  #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
+    appkey:  #Leancloud应用的AppKey
     verify: false #验证码
     notify: true #评论回复提醒
     avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
