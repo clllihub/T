@@ -2,7 +2,7 @@
 hexo极简风格Hexo主题T
 </p>
 
-![](https://ossoososssn.oss-cn-beijing.aliyuncs.com/T/U.jpg)
+![](https://ossoososssn.oss-cn-beijing.aliyuncs.com/T/1.jpg)
 
 ## [在线预览👉](https://ossssn.com)
 
@@ -18,8 +18,6 @@ theme: T
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 ```
-
-
 
 ### 可自定义风格
 
@@ -52,14 +50,6 @@ archive:
   type: "simple" # archive的类型，可选 img | simple
 type为home就是一个封面，为img就是图片加标题的形式，simple就是极简模式
 ```
-
-### 文章封面设置 
-```
-需要在单篇文章头部设置
-custom_disable_cover: true #控制文章顶图是否显示 true 为不显示 
-cover: https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/15.JPEG #文章封面
-```
-
 ### 随机cover
 当你懒的找封面而又想用img模式的时候，我为你准备了些随机封面
 ```

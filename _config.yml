@@ -4,7 +4,7 @@ style:
     max-width: 1500px #总体宽度
     post-max-width: 1000px #文章内容宽度
   color:
-    theme-main: "#ced4da" # 主色调
+    theme-main: "#cce3de" # 主色调
     theme-secondary: "#adb5bd" # 次色调
     text-main: "#333333" # 文字主色调
     text-secondary: "#898FA0" # 文字次色调
@@ -42,9 +42,10 @@ site_description: hi. #The default meta description for all the meta description
 #Add description property to any page to change the meta description
 menu:
   主页: /
-  相册: /archives
   软件: /Software
+  留言: /message
   关于: /about
+  
 
 
 ## 本地搜索
@@ -76,8 +77,8 @@ contact:
 
 # 文章toc索引栏设置
 toc:
-  open: true # 是否开启
-  side: true  # 选择toc的位置，填true的话toc将会显示在文章的侧边，填false的话 toc将出现在文章的开头
+  open: false # 是否开启
+  side: false  # 选择toc的位置，填true的话toc将会显示在文章的侧边，填false的话 toc将出现在文章的开头
   max: 2 #最大深度
   min: 2 #最小深度
 
@@ -85,18 +86,18 @@ toc:
 plugins:
   # 代码高亮，想要使用代码高亮，得先把根目录的_config.yml里的highlight的enable置成false
   highlightjs:
-    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
-    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
+    js: https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/lib/index.min.js
+    css: https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/github.min.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
-
+    
 # 评论系统设置
 comments:
   open: false #是否开启评论系统
   system: valine #选择评论系统 可选 valine gitalk livere
   # Valine
   valine:
-    appid:  #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
-    appkey:  #Leancloud应用的AppKey
+    appid: JkGCji1jv3i5I4GzIGkCWzHd-gzGzoHsz #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
+    appkey: 5PyTcyuXTbrwkhX4vB0sUqx5 #Leancloud应用的AppKey
     verify: false #验证码
     notify: true #评论回复提醒
     avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
@@ -130,9 +131,44 @@ menu_categories:
   name: 分类
 
 #可自定义归档标签页名字
-archive_tab_name: Blog
+archive_tab_name: Memory
 
 
 #图片懒加载
 lazyload:
   open: true #是否开启
+
+#代码块样式
+custom_css:
+  - /css/macpanel
+
+#看板娘
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  enable: false
+  # enable: false
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # scriptFrom: unpkg # unpkg CDN
+  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: true # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-wanko # npm-module package name
+    # use: wanko # 博客根目录/live2d_models/ 下的目录名
+    # use: ./wives/wanko # 相对于博客根目录的路径
+    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true # 手机中是否展示
+
+google_analytics: G-LTZ50ENSXH
+
+microsoft_clarity: e7jn6exq9b
