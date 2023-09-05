@@ -4,7 +4,7 @@ hexo极简风格Hexo主题T
 
 ![](https://ossoososssn.oss-cn-beijing.aliyuncs.com/T/1.png)
 
-## [在线预览👉](https://ossssn.com)
+## [在线预览👉](https://cllli.com)
 
 
 
