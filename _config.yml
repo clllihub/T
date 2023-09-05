@@ -1,13 +1,13 @@
 ############## style ##############
 style:
   layout:
-    max-width: 1500px #总体宽度
-    post-max-width: 1000px #文章内容宽度
+    max-width: 1600px #总体宽度
+    post-max-width: 1300px #文章内容宽度
   color:
-    theme-main: "#cce3de" # 主色调
-    theme-secondary: "#adb5bd" # 次色调
+    theme-main: "#f00000" # 主色调
+    theme-secondary: "#290000" # 次色调
     text-main: "#333333" # 文字主色调
-    text-secondary: "#898FA0" # 文字次色调
+    text-secondary: "#000000" # 文字次色调
   animation:
     open: true # 如果开启动画的话会引入animation.css
 
@@ -58,7 +58,7 @@ search:
 # 自我介绍
 intro:
   title: Hi.I'm Chi. 
-  sub: 'This is my [Memory](https://ossssn.com/archives/)' # markdown语法
+  sub: 'This is my [Gallery](https://cllli.com/archives/)' # markdown语法
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
   author: Chi #所有文章的默认作者
 
@@ -86,8 +86,8 @@ toc:
 plugins:
   # 代码高亮，想要使用代码高亮，得先把根目录的_config.yml里的highlight的enable置成false
   highlightjs:
-    js: https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/lib/index.min.js
-    css: https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/github.min.css
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
+    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
     
 # 评论系统设置
@@ -117,8 +117,8 @@ comments:
 
 
 pagination:
-  prev: prev
-  next: next
+  prev: ◀ 
+  next: ▶ 
 
 ############## 其他 ##############
 
@@ -131,7 +131,7 @@ menu_categories:
   name: 分类
 
 #可自定义归档标签页名字
-archive_tab_name: Memory
+archive_tab_name: Gallery
 
 
 #图片懒加载
@@ -142,33 +142,4 @@ lazyload:
 custom_css:
   - /css/macpanel
 
-#看板娘
-# Live2D
-## https://github.com/EYHN/hexo-helper-live2d
-live2d:
-  enable: false
-  # enable: false
-  scriptFrom: local # 默认
-  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
-  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
-  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
-  # scriptFrom: jsdelivr # jsdelivr CDN
-  # scriptFrom: unpkg # unpkg CDN
-  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
-  tagMode: true # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
-  debug: false # 调试, 是否在控制台输出日志
-  model:
-    use: live2d-widget-model-wanko # npm-module package name
-    # use: wanko # 博客根目录/live2d_models/ 下的目录名
-    # use: ./wives/wanko # 相对于博客根目录的路径
-    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: true # 手机中是否展示
 
-google_analytics: G-LTZ50ENSXH
-
-microsoft_clarity: e7jn6exq9b

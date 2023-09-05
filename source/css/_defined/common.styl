@@ -13,10 +13,19 @@ $post-max-width = convert(theme-config("style.layout.post-max-width",800px))
 $side-toc-width =( $layout-max-width - $post-max-width) / 2
 
 // 自适应
-$desktop-m = "screen and (max-width:1000px)"
+$desktop-m = "screen and (max-width:1600px)"
 $desktop-s = "screen and (max-width:700px)"
 $mobile-m = "screen and (max-width:550px)"
 $mobile-s = "screen and (max-width:450px)"
+
+/* 图片高度适应屏幕高度 */
+.post-content img {
+    max-width: 100%;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+}
+
 
 // 字体
 @font-face 
@@ -33,7 +42,7 @@ $mobile-s = "screen and (max-width:450px)"
   src url(https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/font/Hack-BoldItalic.ttf)
 @font-face 
   font-family Gothic
-  src url(https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/font/GOTHIC.TTF)
+    src: url(https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/font/Hack-Italic.ttf)
 @font-face 
   font-family: Merriweather
   src: url(https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/font/Merriweather-Regular-9.ttf)

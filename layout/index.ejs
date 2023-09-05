@@ -11,3 +11,86 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+
+  canvas {
+    display: block;
+  }
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script>
+  const canvas = document.getElementById("canvas");
+  const context = canvas.getContext("2d");
+  const points = [];
+  const numPoints = 50;
+  const maxSpeed = 0.5 / 3;
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  function generateRandomPoints() {
+    for (let i = 0; i < numPoints; i++) {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height;
+      const z = Math.random() * 100; // Add a z-coordinate for 3D effect
+      const vx = (Math.random() - 0.5) * maxSpeed;
+      const vy = (Math.random() - 0.5) * maxSpeed;
+      points.push({ x, y, z, vx, vy });
+    }
+  }
+
+  function drawPointsAndLines() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < points.length; i++) {
+      const point = points[i];
+      context.beginPath();
+      const scale = 1 + point.z / 100; // Scale by z-coordinate for 3D effect
+      context.arc(point.x, point.y, 2 * scale, 0, Math.PI * 2);
+      context.fillStyle = `rgba(18, 18, 18, ${1 - point.z / 200})`; // Fade color with z-coordinate
+      context.fill();
+
+      for (let j = i + 1; j < points.length; j++) {
+        const start = points[i];
+        const end = points[j];
+        context.beginPath();
+        context.moveTo(start.x, start.y);
+        context.lineTo(end.x, end.y);
+        context.strokeStyle = `rgba(18, 18, 18, ${1 - (start.z + end.z) / 400})`; // Fade color with average z-coordinate
+        context.lineWidth = 0.5;
+        context.stroke();
+      }
+
+      point.x += point.vx;
+      point.y += point.vy;
+
+      if (point.x < 0 || point.x > canvas.width) {
+        point.vx *= -1;
+      }
+
+      if (point.y < 0 || point.y > canvas.height) {
+        point.vy *= -1;
+      }
+    }
+
+    requestAnimationFrame(drawPointsAndLines);
+  }
+
+  generateRandomPoints();
+  drawPointsAndLines();
+</script>
+</body>
+</html>
